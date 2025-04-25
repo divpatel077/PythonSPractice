@@ -1,0 +1,5 @@
+Base_Url = "https://gorest.co.in/"
+User_endpoint = "public/v2/users"
+Post_endpoint = "public/v2/posts"
+Comments_endpoint = "public/v2/comments"
+Todo_endpoint = "public/v2/todos"
