@@ -1,6 +1,6 @@
 
 import requests
-from ScriptPrcatice.random import *
+from ScriptPrcatice.myrandom import *
 import json
 
 
