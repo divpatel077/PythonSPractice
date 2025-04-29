@@ -1,7 +1,6 @@
 import requests
 # from ScriptPrcatice.myrandom import *  # assuming payloads are imported
-from ScriptPrcatice.Config import *  # assuming your config variables
-import json
+from ScriptPrcatice.Utility.Config import *  # assuming your config variables
 
 
 # POST Request Function

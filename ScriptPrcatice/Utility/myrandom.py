@@ -1,4 +1,4 @@
-import myrandom
+import random
 import string
 
 #Random email

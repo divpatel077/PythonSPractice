@@ -1,7 +1,7 @@
 import requests
 # from ScriptPrcatice.myrandom import *  # assuming payloads are imported
-from ScriptPrcatice.Config import *  # assuming your config variables
-import json
+
+from ScriptPrcatice.mutilidae.Utility.mut_config import *# assuming your config variables
 
 
 # POST Request Function
@@ -27,7 +27,7 @@ def PostRequest():
         }
 
         try:
-            response = requests.post(url, json=data)
+            response = requests.post(url, data=data)
             rcode = response.status_code
             response_body = response.text
 
@@ -39,7 +39,7 @@ def PostRequest():
             else:
                 print("absent")
 
-            print(f"Response Body:\n{response_body}")
+            # print(f"Response Body:\n{response_body}")
             print("-" * 40)
 
         except Exception as e:

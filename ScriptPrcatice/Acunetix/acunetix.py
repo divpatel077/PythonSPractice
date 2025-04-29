@@ -1,7 +1,5 @@
 import requests
-from ScriptPrcatice.myrandom import *  # assuming payloads are imported
-from ScriptPrcatice.Config import *  # assuming your config variables
-import json
+from ScriptPrcatice.Utility.Config import *  # assuming your config variables
 
 
 # POST Request Function
@@ -9,21 +7,21 @@ def PostRequest():
     print("POST attack started...........")
 
     url = Base_Url2 + Userinfo
-    headers = {
-        "Content-Type": "application/json"
-        # "Authorization": Auth   # Uncomment if auth is needed
-    }
+    # headers = {
+    #     "Content-Type": "application/json"
+    #     # "Authorization": Auth   # Uncomment if auth is needed
+    # }
 
     for payload in payloads:
         print(f"[*] Testing payload: {payload}")
 
         data = {
-            "uname": "test",
-            "pass": payload
+            "username": payload,
+            "pass": "admin"
         }
 
         try:
-            response = requests.post(url, headers=headers, json=data)
+            response = requests.post(url, data=data)
             rcode = response.status_code
             response_body = response.text
 
